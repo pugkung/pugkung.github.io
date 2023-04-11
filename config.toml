@@ -22,7 +22,9 @@ paginate = 5
   author = "Pugkung"
   siteDescription = "Whatever goes..."
   introTitle="Contact"
-  introBody = """![mail](/mail.svg#icon) | [tanapol.raa@gmail.com](mailto:tanapol.raa@gmail.com)
+  introBody = """![avatar](/avatar.jpeg#avatar)
+  
+  ![mail](/mail.svg#icon) | [tanapol.raa@gmail.com](mailto:tanapol.raa@gmail.com)
 
   ![linkedin](/linkedin.svg#icon) | [tanapol.rattanapichetkul](https://www.linkedin.com/in/tanapol-rattanapichetkul)
 

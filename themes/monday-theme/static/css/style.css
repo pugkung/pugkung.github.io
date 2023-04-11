@@ -439,6 +439,12 @@ nav {
   background-color: rgba(200, 200, 200, 0.4);
 }
 
+img[src*="#avatar"] {
+  width: 4em;
+  height: 4em;
+  display: inline;
+}
+
 img[src*="#icon"] {
   width: 1em;
   height: 1em;

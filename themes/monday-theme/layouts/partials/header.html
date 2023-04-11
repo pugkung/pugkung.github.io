@@ -1,0 +1,28 @@
+{{ $currentPage := . }}
+
+<div class="py-6 pl-4 lg:pl-8 title-banner">
+<a href="/" class="text-5xl block mb-5">{{ .Site.Title }} </a>
+<span class="site-description"> {{ .Site.Params.siteDescription }} </span>
+</div>
+
+<nav class="flex flex-row gap-8 pl-4 lg:pl-8">
+        {{ range .Site.Menus.main }}
+
+                {{ $text := print .Name | safeHTML }}
+
+                {{ if eq $currentPage.RelPermalink .URL }}
+                <div class="text-lg nav-pad current-page-nav">
+                        <p>{{$text}}</p> 
+
+                </div>
+
+                {{ else }}
+                <div class="text-lg nav-pad hover:hightlight-nav">
+
+                                <a  href="{{ .URL }}"> {{ $text }}</a>
+                        
+                </div>
+                {{end}}
+        {{ end }}
+</nav>
+<hr>

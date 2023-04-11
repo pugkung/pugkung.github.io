@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+		 <div class="max-w-{1400px}">
+        {{- partial "header.html" . -}}
+
+
+	<div class="grid grid-cols-12 gap-8 mx-4 lg:mx-8 mt-10">
+			<div class="col-span-12 lg:col-span-8">
+					 {{- block "main" . }}{{- end }}
+			</div>
+
+			<aside class="lg:col-span-4 col-span-12">
+					<h3 class="text-lg mb-2 text-black font-medium "> Explore topics by </h3>
+					<ul class="text-cyan-900">
+						<li><a href="/categories/" class="hover:underline"> Categories </a></li>
+						<li><a href="/tags/" class="hover:underline"> Tags </a></li>
+					</ul>
+
+
+					<!-- end tax test -->
+					<!-- Featured posts -->
+					<h3 class="text-lg mb-2 mt-3 text-black font-medium ">Featured Posts</h3>
+						<ul class="text-cyan-900">
+						{{ range  (where .Site.Pages ".Params.featured" "=" true) }}
+						  <li><a href="{{ .Page.RelPermalink }}" class="hover:underline">{{ .Page.Title }}</a>
+						  </li>
+					  {{ end }}
+					</ul>
+
+					<!-- End of featured posts -->
+
+					<!-- Start of Intro -->
+					{{ if .Site.Params.introTitle }}
+					<h3 class="text-lg mb-2 mt-3 text-black font-medium"> {{ .Site.Params.introTitle | .RenderString }}  </h3>
+					{{ end }}
+
+					{{ if .Site.Params.introBody }}
+					<p> {{ .Site.Params.introBody | .RenderString }} </p>
+					{{ end }}
+					
+					
+
+
+			</aside>
+
+</div>
+
+        
+
+		</div>
+		{{- partial "footer.html" . -}} 
+    </body>
+</html>
+
+

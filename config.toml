@@ -1,0 +1,43 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Pugkung'
+theme = 'monday-theme'
+paginate = 5
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[params]
+  author = "Pugkung"
+  siteDescription = "Whatever goes..."
+  introTitle="Contact"
+  introBody = """![mail](/mail.svg#icon) | [tanapol.raa@gmail.com](mailto:tanapol.raa@gmail.com)
+
+  ![linkedin](/linkedin.svg#icon) | [tanapol.rattanapichetkul](https://www.linkedin.com/in/tanapol-rattanapichetkul)
+
+  ![github](/github.svg#icon) | [pugkung](https://github.com/pugkung)"""
+
+[markup]
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ''
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = 'monokailight'
+tabWidth = 4

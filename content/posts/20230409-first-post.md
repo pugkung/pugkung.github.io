@@ -7,7 +7,7 @@ tags: []
 
 This is the first blog post for my personal site. I will keep up to explore new things and share my knowledge over this blog from time to time.
 
-I used to write a few entries on [Medium](https://medium.com/@pugkung), but I found that it lacks flexibilty to post things like code snippets (without drawing diagram or writing code elsewhere). After exploring some static-site generators that support blogging and Markdown, I think this might be more suitable for simplicity and support what I might be writting.
+I used to write a few entries on [Medium](https://medium.com/@pugkung), but I found that it lacks flexibility to post things like code snippets (without drawing diagram or writing code elsewhere). After exploring some static-site generators that support blogging and Markdown, I think this might be more suitable for simplicity and support what I might be writing.
 
 For example, writing things in markdown format could support writing simple stuff such as tables and code snippet easily
 

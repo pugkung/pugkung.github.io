@@ -1,6 +1,5 @@
 ---
 Title: "Team Topologies"
-description: "Short desc"
 featured_image: "/img/team_book_cover.jpg"
 Publishdate: 2023-04-23
 categories: ["Non-Technical", "Agile"]
@@ -11,7 +10,7 @@ I have been trying to look for an optimal way to ensure that my working team is 
 
 This post will be about a short summary of the book contents
 
-<img src="/img/team_book_cover.jpg" width=280 height=400>
+<img src="/img/team_book_cover.jpg" width=280 height=400 alt="Book Cover">
 <br>
 
 # Sections
